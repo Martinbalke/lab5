@@ -28,12 +28,15 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function multiply(a, b) { 
+    let multiplyNums = a * b;
+    let numsString = `The product of ${a} and ${b} is ${multiplyNums}.`
+    return [multiplyNums, numsString];
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -49,9 +52,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+// function sumAndMultiply(a, b, c) { 
+//     let numSum = sum(a, b, c);
+//     let numMultiply = multiply(a, b, c);
+//     let sumString = `${a} and ${b} and ${c} sum to ${numSum}.`
+//     let multiplyString = `The product of ${a} and ${b} and ${5} is ${c}.}`
+//     return [numSum, numMultiply, sumString, multiplyString];
 
-}
+// }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
@@ -68,12 +76,18 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
+// // Write your code here
+// var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+// function sumArray(sumArr) { 
+//     for(i = 0; i < sumArr.length; i++){
+//        let numSum = sum(numSum, sumArr[i])
+//        let numString = `${sumArr} was passed in as an array of numbers and ${numSum} is their sum`
+//        if(i === 3){
+//            return [numSum, numString];
+//     }
 
-}
+// }
 
 // Here is the test for sumArray(); uncomment it to run it
 
