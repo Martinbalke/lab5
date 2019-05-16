@@ -85,10 +85,10 @@ function sumArray(sumArr) {
   let sumArray = `${sumArr} was passed in as an array of numbers, and ${numSum} is their sum.`
   return [numSum, sumArray];
 }
-console.log(sumArray(testArray));
+
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+// testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -104,11 +104,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    let numbers1 = multiply(multArr[0], multArr[1])[0];
+    let numMultiply = multiply(numbers1, multArr[2])[0];
+    let multiplyString = `The numbers ${multArr} have a product of ${numMultiply}.`
+    return [numMultiply, multiplyString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
